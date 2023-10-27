@@ -1,0 +1,92 @@
+.borderbox {
+  animation: border-color-animation 5s infinite;
+}
+
+@keyframes border-color-animation {
+  0% {
+    border-color: rgb(9, 158, 113);
+  }
+  25% {
+    border-color: rgb(217, 24, 223);
+  }
+  50% {
+    border-color: rgb(214, 214, 20);
+  }
+  75% {
+    border-color: rgb(234, 49, 135);
+  }
+  100% {
+    border-color: rgb(53, 118, 209);
+  }
+}
+
+.border-animation {
+  position: relative;
+  width: 64px;
+  height: 80px;
+  margin: 0 auto;
+  object-fit: cover;
+  border-radius: 0.75rem;
+  border: 2px solid transparent;
+}
+
+.border-animation:before,
+.border-animation:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border-radius: 0.75rem;
+  border: 2px solid transparent;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.border-animation:before {
+  animation-name: border-animation-purple;
+}
+
+.border-animation:after {
+  animation-name: border-animation-blue;
+  animation-delay: 1s;
+}
+
+@keyframes border-animation-purple {
+  0% {
+    border-color: transparent;
+  }
+  25% {
+    border-color: #9f7aea;
+  }
+  50% {
+    border-color: #3b82f6;
+  }
+  75% {
+    border-color: #f43f5e;
+  }
+  100% {
+    border-color: #fbbf24;
+  }
+}
+
+@keyframes border-animation-blue {
+  0% {
+    border-color: transparent;
+  }
+  25% {
+    border-color: #3b82f6;
+  }
+  50% {
+    border-color: #f43f5e;
+  }
+  75% {
+    border-color: #fbbf24;
+  }
+  100% {
+    border-color: #9f7aea;
+  }
+}

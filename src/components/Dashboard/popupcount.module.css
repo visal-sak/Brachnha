@@ -1,0 +1,84 @@
+.animationFlyDown {
+  position: absolute;
+  animation: fly-around 5s ease-in-out infinite, up-down 2s ease-in-out infinite;
+}
+
+@keyframes fly-around {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(calc(100% - 50px), 0);
+  }
+  50% {
+    transform: translate(calc(100% - 50px), calc(100% - 50px));
+  }
+  75% {
+    transform: translate(0, calc(100% - 50px));
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+.animationFly {
+  position: absolute;
+  animation: fly-around 5s ease-in-out infinite, up-down 2s ease-in-out infinite;
+}
+
+@keyframes fly-around {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(calc(100% - 50px), 0);
+  }
+  50% {
+    transform: translate(calc(100% - 50px), calc(100% - 50px));
+  }
+  75% {
+    transform: translate(0, calc(100% - 50px));
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+  .animationFlying {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: fly 5s ease-in-out infinite;
+}
+
+@keyframes fly {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(100%, -50%) rotate(45deg);
+  }
+  50% {
+    transform: translate(200%, 0) rotate(0deg);
+  }
+  75% {
+    transform: translate(100%, 50%) rotate(-45deg);
+  }
+  100% {
+    transform: translate(500%, 100%) rotate(0deg);
+  }
+}
+
+@keyframes flying {
+  0% {
+    transform: translateY(100%);
+  }
+  50% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+.animation {
+  position: absolute;
+  animation: flying 4s ease-in-out infinite;
+}

@@ -1,0 +1,12 @@
+             
+.rotate{
+    transition: .5s, color .10s;
+        -webkit-transition: .5s, color .10s;
+        -moz-transition: .5s, color .10s;
+}
+.rotate:hover{
+    transform: rotateZ(360deg);
+        -webkit-transform: rotateZ(360deg);
+        -moz-transform: rotateZ(360deg);
+}
+              
